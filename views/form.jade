@@ -1,0 +1,9 @@
+extends layout
+
+block content 
+    form(method='POST', action='/new')
+        h1 New Message 
+        input(type="text", name='user', placeholder='Name')
+        textarea(name="text", cols="30", rows="5")
+        button Submit 
+        a(href="/") Back 
